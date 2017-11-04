@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Haromszamvizsgalat.java</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+body {color: #000000; background-color: #ffffff; font-family: Monospaced}
+pre {color: #000000; background-color: #ffffff; font-family: Monospaced}
+table {color: #000000; background-color: #e9e8e2; font-family: Monospaced}
+.ST0 {color: #969696; font-family: Monospaced; font-weight: bold}
+.ST1 {font-family: Monospaced; font-weight: bold}
+.comment {color: #969696}
+.ST2 {font-family: Monospaced; font-weight: bold; font-style: italic}
+.ST3 {color: #009900; font-family: Monospaced; font-style: italic}
+.literal {color: #0000e6}
+.string {color: #ce7b00}
+-->
+</style>
+</head>
+<body>
+<table width="100%"><tr><td align="center">C:\Users\DOBAISZABOLCS\Documents\NetBeansProjects\haromszamvizsgalat\src\haromszamvizsgalat\Haromszamvizsgalat.java</td></tr></table>
+<pre>
+ 1 <span class="comment">/*</span>
+ 2 <span class="comment"> * To change this license header, choose License Headers in Project Properties.</span>
+ 3 <span class="comment"> * To change this template file, choose Tools | Templates</span>
+ 4 <span class="comment"> * and open the template in the editor.</span>
+ 5 <span class="comment"> */</span>
+ 6 <span class="literal">package</span> haromszamvizsgalat;
+ 7 
+ 8 <span class="comment">/**</span>
+ 9 <span class="comment"> *</span>
+10 <span class="comment"> * </span><span class="ST0">@author</span> <span class="comment">DOBAISZABOLCS</span>
+11  <span class="comment">*/</span>
+12 <span class="literal">public</span> <span class="literal">class</span> <span class="ST1">Haromszamvizsgalat</span> {
+13 
+14     <span class="comment">/**</span>
+15 <span class="comment">     * </span><span class="ST0">@param</span> args <span class="comment">the</span> <span class="comment">command</span> <span class="comment">line</span> <span class="comment">arguments</span>
+16      <span class="comment">*/</span>
+17     <span class="literal">public</span> <span class="literal">static</span> <span class="literal">void</span> <span class="ST2">main</span>(String[] args) {
+18         <span class="comment">/**</span><span class="ST0">megvizsgálja</span><span class="ST0">, </span><span class="ST0">hogy</span> <span class="ST0">a</span> <span class="ST0">felhasználó</span> <span class="ST0">által</span> <span class="ST0">adott</span> <span class="ST0">három</span> <span class="ST0">szám</span> <span class="ST0">közül</span>
+19 <span class="comment">         * </span><span class="ST0">melyik</span> <span class="ST0">a</span> <span class="ST0">legnagyobb</span><span class="ST0">, </span><span class="ST0">és</span> <span class="ST0">mindhárom</span> <span class="ST0">osztható</span><span class="ST0">-</span><span class="ST0">e</span> <span class="ST0">hárommal</span><span class="ST0">.</span>
+20          <span class="comment">*/</span>
+21     java.util.Scanner sc=<span class="literal">new</span> java.util.Scanner(System.<span class="ST3">in</span>);
+22     System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">Adja meg az első számot: </span><span class="string">&quot;</span>);
+23     <span class="literal">int</span> szam1=sc.nextInt();
+24     System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">Adja meg a második számot: </span><span class="string">&quot;</span>);
+25     <span class="literal">int</span> szam2=sc.nextInt();
+26     System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">Adja meg a harmadik számot: </span><span class="string">&quot;</span>);
+27     <span class="literal">int</span> szam3=sc.nextInt();
+28     <span class="literal">if</span> (szam1&gt;szam2 &amp;&amp; szam1&gt;szam3)
+29     {
+30         System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">Az első szám a legnagyobb</span><span class="string">&quot;</span>);
+31     }
+32      <span class="literal">if</span> (szam2&gt;szam1 &amp;&amp; szam2&gt;szam3)
+33     {
+34         System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">A második szám a legnagyobb</span><span class="string">&quot;</span>);
+35     }
+36     <span class="literal">if</span> (szam3&gt;szam2 &amp;&amp; szam1&lt;szam3)
+37     {
+38         System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">A harmadik szám a legnagyobb</span><span class="string">&quot;</span>);
+39     }
+40     <span class="literal">if</span> (szam1%3==0 &amp;&amp; szam2%3==0 &amp;&amp; szam3%3==0)
+41     {
+42         System.<span class="ST3">out</span>.println(<span class="string">&quot;</span><span class="string">Mindhárom szám osztható hárommal</span><span class="string">&quot;</span>);
+43     }
+44     }
+45 }
+46 
+</pre></body>
+</html>
